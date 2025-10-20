@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linklist_ögrenci", "Linklist_ögrenci\Linklist_ögrenci.csproj", "{9D9B9B03-DC98-4C07-A656-E0BD10C0EFFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D9B9B03-DC98-4C07-A656-E0BD10C0EFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9B9B03-DC98-4C07-A656-E0BD10C0EFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9B9B03-DC98-4C07-A656-E0BD10C0EFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9B9B03-DC98-4C07-A656-E0BD10C0EFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D480C06-11D3-4CFD-81C5-C9719289034A}
+	EndGlobalSection
+EndGlobal
