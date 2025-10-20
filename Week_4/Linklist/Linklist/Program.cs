@@ -31,6 +31,11 @@ class Program
             newNode.Next = head;
             head = newNode;
             Console.WriteLine($"{value} başa eklendi");
+            if (tail == null)  // list boşsa
+            {
+                tail = newNode;
+            }
+            Console.WriteLine($"{value} başa eklendi");
         }
         // Sona eleman ekleme
         public void sonaEkle(int value)
@@ -43,12 +48,7 @@ class Program
                 Console.WriteLine($"{value} sona eklendi");
                 return;
             }
-            Node current = head;
-            while(current.Next != null)
-            {
-                current = current.Next; 
-            }
-            current.Next = newNode;
+            tail.Next = newNode;
             tail = newNode;
             Console.WriteLine($"{value} sona eklendi");
         }
@@ -98,11 +98,12 @@ class Program
                 return;
             }
             Node current = head;
-            while(current.Next != null && current.Next.Next != null)
+            while(current.Next.Next != null)
             {
                 current = current.Next;
             }
             current.Next = null;
+            tail = current;
             Console.WriteLine("Son eleman silindi");
             return;
         }
