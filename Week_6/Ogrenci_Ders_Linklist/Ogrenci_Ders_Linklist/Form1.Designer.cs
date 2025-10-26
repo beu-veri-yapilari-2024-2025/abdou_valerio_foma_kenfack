@@ -30,6 +30,7 @@
         {
             panelMainMenu = new Panel();
             panelStuDersOperations = new Panel();
+            listBox1 = new ListBox();
             buttonQuery = new Button();
             buttonBack = new Button();
             buttonDel = new Button();
@@ -45,7 +46,6 @@
             buttonDelStu = new Button();
             buttonAddStudent = new Button();
             label2 = new Label();
-            listBox1 = new ListBox();
             panelMainMenu.SuspendLayout();
             panelStuDersOperations.SuspendLayout();
             SuspendLayout();
@@ -81,6 +81,14 @@
             panelStuDersOperations.Name = "panelStuDersOperations";
             panelStuDersOperations.Size = new Size(800, 450);
             panelStuDersOperations.TabIndex = 15;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(12, 266);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(465, 144);
+            listBox1.TabIndex = 10;
             // 
             // buttonQuery
             // 
@@ -181,7 +189,7 @@
             // buttonCourseListing
             // 
             buttonCourseListing.Font = new Font("Segoe UI", 11F);
-            buttonCourseListing.Location = new Point(61, 293);
+            buttonCourseListing.Location = new Point(115, 300);
             buttonCourseListing.Name = "buttonCourseListing";
             buttonCourseListing.Size = new Size(534, 64);
             buttonCourseListing.TabIndex = 14;
@@ -192,7 +200,7 @@
             // buttonStuListing
             // 
             buttonStuListing.Font = new Font("Segoe UI", 11F);
-            buttonStuListing.Location = new Point(61, 205);
+            buttonStuListing.Location = new Point(115, 212);
             buttonStuListing.Name = "buttonStuListing";
             buttonStuListing.Size = new Size(534, 58);
             buttonStuListing.TabIndex = 12;
@@ -203,7 +211,7 @@
             // buttonDelStu
             // 
             buttonDelStu.Font = new Font("Segoe UI", 11F);
-            buttonDelStu.Location = new Point(61, 130);
+            buttonDelStu.Location = new Point(115, 125);
             buttonDelStu.Name = "buttonDelStu";
             buttonDelStu.Size = new Size(534, 56);
             buttonDelStu.TabIndex = 10;
@@ -214,7 +222,7 @@
             // buttonAddStudent
             // 
             buttonAddStudent.Font = new Font("Segoe UI", 11F);
-            buttonAddStudent.Location = new Point(61, 47);
+            buttonAddStudent.Location = new Point(115, 48);
             buttonAddStudent.Name = "buttonAddStudent";
             buttonAddStudent.Size = new Size(534, 56);
             buttonAddStudent.TabIndex = 9;
@@ -226,19 +234,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(131, 0);
+            label2.Location = new Point(198, 0);
             label2.Name = "label2";
             label2.Size = new Size(344, 35);
             label2.TabIndex = 8;
             label2.Text = "Öğrenci Ders Yönetim Sistemi";
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(12, 266);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(465, 144);
-            listBox1.TabIndex = 10;
             // 
             // Form1
             // 

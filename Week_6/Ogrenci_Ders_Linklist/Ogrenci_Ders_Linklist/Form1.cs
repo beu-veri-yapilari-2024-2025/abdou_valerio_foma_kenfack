@@ -126,7 +126,6 @@ namespace Ogrenci_Ders_Linklist
             }
             else
             {
-                sonuclar.Add("Boş");
                 MessageBox.Show("Lütfen geçerli sayısal değerler girin!");
             }
             listBox1.Items.AddRange(sonuclar.ToArray());

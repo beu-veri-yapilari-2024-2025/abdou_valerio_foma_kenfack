@@ -3,9 +3,9 @@ namespace Ogrenci_Ders_Linklist
 {
     public class Node
     {
-        public int OgrenciNo;
-        public Dictionary<int, string> Derskodu_HarfOrt = new Dictionary<int, string>();
-        public Node Next;
+        public int OgrenciNo { get; private set; }
+        public Dictionary<int, string> Derskodu_HarfOrt { get; private set; }
+        public Node Next { get; internal set; }
 
         public Node(int ogrenciNo, Dictionary<int, string> derskodu_harfOrt)
         {
@@ -139,7 +139,6 @@ namespace Ogrenci_Ders_Linklist
             Node current = headNode;
             if (orgNum != -1)
             {
-                //We Must include the head in the search
                 while (current != null && current.OgrenciNo != orgNum)
                 {
                     current = current.Next;
