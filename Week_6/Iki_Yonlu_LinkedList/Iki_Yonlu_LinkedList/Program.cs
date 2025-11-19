@@ -122,39 +122,9 @@
         // Belirli bir elemanı silme
         public void BelirliElemanSil(int value)
         {
-            if (head == null)
-            {
-                Console.WriteLine("Liste boş, silenecek eleman yok");
-                return;
-            }
-            if(head.Data == value)
-            {
-                head = head.Next;
-                if(head != null)
-                {
-                    head.Previous = null;
-                }
-                else
-                {
-                    tail = null;
-                }
-                Console.WriteLine($"{value} listeden silindi");
-                return ;
-            }
-            if (tail.Data == value)
-            {
-                tail = tail.Previous;
-                if(tail != null)
-                {
-                    tail.Next = null;
-                }
-                else
-                {
-                    head = null;
-                }
-                Console.WriteLine($"{value} listeden silindi");
-                return;
-            }
+            bastanSil();
+            sonaSil();
+
             Node current = head.Next;
             while(current != null && current.Data != value)
             {
