@@ -4,7 +4,7 @@
     static int Ackermann(int m, int n)
     {
         // Base case 1: Eğer m = 0 ise, n + 1 döndürür.
-        if (m == 1)
+        if (m == 0)
         {
             Console.WriteLine($"A({m}, {n}) = {n + 1}  (m=0 durumu)");
             return n + 1;
