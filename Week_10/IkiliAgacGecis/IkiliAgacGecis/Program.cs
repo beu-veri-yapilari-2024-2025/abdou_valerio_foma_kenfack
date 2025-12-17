@@ -117,7 +117,7 @@ public class BinaryTree
             TreeNode current = nodes[i];
             Console.Write($"{current.Data} ");
 
-            // Add children to the list
+            // Add children to the list that's why we use if and if and not if and else if
             if (current.left != null)
                 nodes.Add(current.left);
             if (current.right != null)
